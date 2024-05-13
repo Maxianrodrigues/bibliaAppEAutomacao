@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Bíblia Sagrada</string>
+    <string name="txt_titulo">Bíblia Sagrada</string>
+    <string name="txt_biblia">Bíblias</string>
+    <string name="txt_biblia_livros">Bíblia</string>
+    <string name="txt_texto_versiculos">texto dos versiculos.</string>
+    <string name="txt_hinario">Hinários</string>
+    <string name="txt_hint_edit_hino">Digite o titulo ou nº do hino</string>
+    <string name="txt_letra_dos_hinos">letra dos hinosletra dos hinosletra dos hinosletra dos hinosletra dos hinosletra dos hinosletra dos hinosletra dos hinosletra dos hinos</string>
+    <string name="txt_hint_edit_busca_hinos">Digite o numero do hino</string>
+    <string name="txt_nome_do_hino">Nome do Hino</string>
+    <string name="txt_selecione_um_hino">Selecione um hino:</string>
+    <string name="txt_numero_hino">numero</string>
+    <string name="chk_marcar_como_lido">Marcar como lido</string>
+</resources>
