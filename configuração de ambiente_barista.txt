@@ -1,0 +1,31 @@
+1º instalar o java jdk e o android studio
+2º criar um projeto no android studio
+3º vamos criar os testes na pasta (androidTeste)
+4º na pasta (test) é onde os devs criam os testes unitários
+5º no build.gradle (app) já vem com as libs do expresso incluso, incentivando o uso do expresso
+6º crie o emulador e configure o aparelho para rodarmos a automação
+7º acesse a pagina do github do barista para entender como configurar sua dependecia no projeto: https://github.com/AdevintaSpain/Barista
+8º em seu gradle adicione a dependencia do barista
+9º na pasta androidTest crie um diretorio do barista para colocar as classes de teste
+10º para inspecionar elementos, basta acessar:  :\Users\maxia\AppData\Local\Android\Sdk\tools\bin e executar o uiautomatorviewer.bat
+11º os comandos do barista você pode identificar na pagina do github do barista: https://github.com/AdevintaSpain/Barista
+
+12º na classe com o teste primeiramente criamos um metodo public passando a activity que vamos iniciar ex:
+
+public class AbrirHinario {
+
+    @Rule
+    public ActivityTestRule<MainActivity> mActivityRule = new ActivityTestRule<>(MainActivity.class);
+
+ @Before
+    public void abrirHinarioComSucesso(){
+        //vou clicar no modulo hinario
+        BaristaVisibilityAssertions.assertDisplayed(R.id.txtTitulo);
+        BaristaClickInteractions.clickOn(R.id.imgHinario);
+    }
+}
+
+13º no metodo para escrita do cenário para por exemplo digitar uma informação em um campo é necessário importar os metodos do barista na classe,
+e como fazemos isso ? simples, digite dentro do metodo Barista que já vai carregar os comandos disponivel, no caso para digitar um texto faça:
+BaristaEditTextInteractions.writeTo(R.id.editBuscaId, "343");
+

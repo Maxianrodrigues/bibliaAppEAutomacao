@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SpinnerText">
+        <item name="android:textSize">56sp</item>  <item name="android:textColor">?attr/colorPrimary</item>
+    </style>
+</resources>
