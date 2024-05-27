@@ -293,7 +293,7 @@ public class Activity_hinario extends AppCompatActivity {
         int limitador = Integer.parseInt(filtro);
 
         if (limitador > 640 || limitador == 0){
-            Toast.makeText(this, "Não existe hino superior 640!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Não existe hino com essa numeração " + limitador, Toast.LENGTH_SHORT).show();
         }else {
 
             if (TextUtils.isEmpty(filtro)){

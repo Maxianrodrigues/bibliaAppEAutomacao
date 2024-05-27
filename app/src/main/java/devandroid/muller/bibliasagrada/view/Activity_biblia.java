@@ -83,7 +83,7 @@ public class Activity_biblia extends AppCompatActivity {
         chkLido = findViewById(R.id.chkLido);
 
 
-        ArrayAdapter<Livro> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, livrosListados);
+        ArrayAdapter<Livro> adapter = new ArrayAdapter<>(this, R.layout.layout_spinner, livrosListados);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerLivros.setAdapter(adapter);
 
@@ -109,7 +109,7 @@ public class Activity_biblia extends AppCompatActivity {
 
 
                 // Atualizar o ArrayAdapter do Spinner de capitulos
-                ArrayAdapter<Versiculo> capitulosArrayAdapter = new ArrayAdapter<>(Activity_biblia.this, android.R.layout.simple_spinner_item, capitulosListados);
+                ArrayAdapter<Versiculo> capitulosArrayAdapter = new ArrayAdapter<>(Activity_biblia.this, R.layout.layout_spinner, capitulosListados);
                 capitulosArrayAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
                 spinnerCapitulos.setAdapter(capitulosArrayAdapter);
                 spinnerCapitulos.setSelection(capituloIdRecuperado -1);

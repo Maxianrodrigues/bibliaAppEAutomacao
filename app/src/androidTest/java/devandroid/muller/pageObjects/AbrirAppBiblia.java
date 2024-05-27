@@ -1,7 +1,10 @@
 package devandroid.muller.pageObjects;
 
+import android.widget.TextView;
+
 import androidx.test.rule.ActivityTestRule;
 
+import com.adevinta.android.barista.assertion.BaristaCheckedAssertions;
 import com.adevinta.android.barista.assertion.BaristaVisibilityAssertions;
 import com.adevinta.android.barista.interaction.BaristaClickInteractions;
 
@@ -26,6 +29,11 @@ public class AbrirAppBiblia {
     protected void acessarBiblia(){
         BaristaClickInteractions.clickOn(R.id.imgBiblia);
         BaristaVisibilityAssertions.assertDisplayed(R.id.spinnerLivros);
+    }
+
+    protected void marcarCapituloComoLido(){
+        BaristaClickInteractions.clickOn(R.id.chkLido);
+        BaristaCheckedAssertions.assertChecked(R.id.chkLido);
     }
 
     protected void voltarTelaInicial(){

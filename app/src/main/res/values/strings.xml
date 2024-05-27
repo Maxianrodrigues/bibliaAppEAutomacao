@@ -12,4 +12,5 @@
     <string name="txt_selecione_um_hino">Selecione um hino:</string>
     <string name="txt_numero_hino">numero</string>
     <string name="chk_marcar_como_lido">Marcar como lido</string>
+    <string name="txt_nome_fabrica">MAXQA</string>
 </resources>

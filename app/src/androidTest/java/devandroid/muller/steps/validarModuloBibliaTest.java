@@ -11,6 +11,9 @@ public class validarModuloBibliaTest extends AbrirAppBiblia {
     @Test
     public void acessarModuloBiblia(){
         acessarBiblia();
+        marcarCapituloComoLido();
+        voltarTelaInicial();
+        acessarBiblia();
         voltarTelaInicial();
         hinario.abrirHinarioComSucesso();
     }
